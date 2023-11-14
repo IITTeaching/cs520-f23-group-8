@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_aMevEH0bEe6TOrJKDhIKKg" name="Community" dataPackage="_aMevEX0bEe6TOrJKDhIKKg" Server="Localhost 127.0.0.1" FilePath="C:/Users/MSI_J/Desktop/ZZZ/ETL/Target/Community.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_aMevEX0bEe6TOrJKDhIKKg" name="default" dataManager="_aMevEH0bEe6TOrJKDhIKKg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_aMevEn0bEe6TOrJKDhIKKg" id="_epoFQH0aEe6TOrJKDhIKKg" comment="Community_schema" label="Community_schema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevE30bEe6TOrJKDhIKKg" label="Community_ID" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevFH0bEe6TOrJKDhIKKg" label="Community_Name" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevFX0bEe6TOrJKDhIKKg" label="Zip" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevFn0bEe6TOrJKDhIKKg" label="State" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevF30bEe6TOrJKDhIKKg" label="Country" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevGH0bEe6TOrJKDhIKKg" label="Area" length="10" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevGX0bEe6TOrJKDhIKKg" label="Population" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevGn0bEe6TOrJKDhIKKg" label="Employment_Rate" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevG30bEe6TOrJKDhIKKg" label="Crime_Rate" length="10" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevHH0bEe6TOrJKDhIKKg" label="Amenities" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevHX0bEe6TOrJKDhIKKg" label="Transport" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevHn0bEe6TOrJKDhIKKg" label="Life_Index" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevH30bEe6TOrJKDhIKKg" label="Health_Index" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevIH0bEe6TOrJKDhIKKg" label="Living_Index" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevIX0bEe6TOrJKDhIKKg" label="Environment_Index" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aMevIn0bEe6TOrJKDhIKKg" label="Climate_Index" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

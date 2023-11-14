@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_ymZq0H0cEe6TOrJKDhIKKg" name="Community_Services" dataPackage="_ymZq0X0cEe6TOrJKDhIKKg" Server="Localhost 127.0.0.1" FilePath="C:/Users/MSI_J/Desktop/ZZZ/ETL/Target/Community_Service.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_ymZq0X0cEe6TOrJKDhIKKg" name="default" dataManager="_ymZq0H0cEe6TOrJKDhIKKg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ymZq0n0cEe6TOrJKDhIKKg" id="_HXGvEH0cEe6TOrJKDhIKKg" comment="Community_Services_schema" label="Community_Services_schema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq030cEe6TOrJKDhIKKg" label="ID" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq1H0cEe6TOrJKDhIKKg" label="Community_ID" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq1X0cEe6TOrJKDhIKKg" label="S_Name" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq1n0cEe6TOrJKDhIKKg" label="S_Type" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq130cEe6TOrJKDhIKKg" label="P_Name" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq2H0cEe6TOrJKDhIKKg" label="S_Address" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq2X0cEe6TOrJKDhIKKg" label="Contact" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq2n0cEe6TOrJKDhIKKg" label="Office_Hour" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq230cEe6TOrJKDhIKKg" label="Capacity" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq3H0cEe6TOrJKDhIKKg" label="Specialties" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq3X0cEe6TOrJKDhIKKg" label="Insurance_Type" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq3n0cEe6TOrJKDhIKKg" label="Is_Emergency" length="2" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq330cEe6TOrJKDhIKKg" label="Wait_Time" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq4H0cEe6TOrJKDhIKKg" label="Patient_Rating" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq4X0cEe6TOrJKDhIKKg" label="Qualification" length="3" precision="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ymZq4n0cEe6TOrJKDhIKKg" label="Website" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

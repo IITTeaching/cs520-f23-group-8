@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_QlSvMH0XEe6iQJjAR0BDCA" name="building_community_Copy" id="_QjfYYH0XEe6iQJjAR0BDCA" dataPackage="_Uke-EX0WEe6iQJjAR0BDCA" Server="Localhost 127.0.0.1" FilePath="C:/Users/MSI_J/Desktop/ZZZ/ETL/building_community.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Uke-EX0WEe6iQJjAR0BDCA" name="default" dataManager="_QlSvMH0XEe6iQJjAR0BDCA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Uke-En0WEe6iQJjAR0BDCA" id="_mH5m8H0VEe6iQJjAR0BDCA" comment="building_community_schema" label="building_community_schema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-E30WEe6iQJjAR0BDCA" label="Building_ID" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-FH0WEe6iQJjAR0BDCA" label="Community_ID" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-FX0WEe6iQJjAR0BDCA" label="Community_Name" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-Fn0WEe6iQJjAR0BDCA" label="Description" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-F30WEe6iQJjAR0BDCA" label="Zip" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-GH0WEe6iQJjAR0BDCA" label="State" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-GX0WEe6iQJjAR0BDCA" label="Country" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-Gn0WEe6iQJjAR0BDCA" label="Area" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-G30WEe6iQJjAR0BDCA" label="Population" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-HH0WEe6iQJjAR0BDCA" label="EmploymentRate" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-HX0WEe6iQJjAR0BDCA" label="CrimeRate" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-Hn0WEe6iQJjAR0BDCA" label="Amenities" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-H30WEe6iQJjAR0BDCA" label="PublicTransportAccess" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-IH0WEe6iQJjAR0BDCA" label="QualityOfLifeIndex" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-IX0WEe6iQJjAR0BDCA" label="HealthCareIndex" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-In0WEe6iQJjAR0BDCA" label="CostOfLivingIndex" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-I30WEe6iQJjAR0BDCA" label="PollutionIndex" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uke-JH0WEe6iQJjAR0BDCA" label="ClimateIndex" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

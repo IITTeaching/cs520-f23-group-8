@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_QmheQH0XEe6iQJjAR0BDCA" name="building_street_Copy" id="_QmV4EH0XEe6iQJjAR0BDCA" dataPackage="_yS1vQX0UEe6iQJjAR0BDCA" Server="Localhost 127.0.0.1" FilePath="C:/Users/MSI_J/Desktop/ZZZ/ETL/building_street.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_yS1vQX0UEe6iQJjAR0BDCA" name="default" dataManager="_QmheQH0XEe6iQJjAR0BDCA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_yS1vQn0UEe6iQJjAR0BDCA" id="_pJOxUH0SEe6iQJjAR0BDCA" comment="building_street_schema" label="building_street_schema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vQ30UEe6iQJjAR0BDCA" label="Street_ID" length="11" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vRH0UEe6iQJjAR0BDCA" label="Street_Name" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vRX0UEe6iQJjAR0BDCA" label="Description" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vRn0UEe6iQJjAR0BDCA" label="LocationType" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vR30UEe6iQJjAR0BDCA" label="Zip" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vSH0UEe6iQJjAR0BDCA" label="State" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vSX0UEe6iQJjAR0BDCA" label="Country" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vSn0UEe6iQJjAR0BDCA" label="Address" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vS30UEe6iQJjAR0BDCA" label="Latitude" length="-1" precision="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vTH0UEe6iQJjAR0BDCA" label="Longitude" length="-1" precision="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vTX0UEe6iQJjAR0BDCA" label="Location" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vTn0UEe6iQJjAR0BDCA" label="Elevation" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vT30UEe6iQJjAR0BDCA" label="GeoPoint" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vUH0UEe6iQJjAR0BDCA" label="Region" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vUX0UEe6iQJjAR0BDCA" label="Population" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vUn0UEe6iQJjAR0BDCA" label="LandUse" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vU30UEe6iQJjAR0BDCA" label="Accessibility" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vVH0UEe6iQJjAR0BDCA" label="Amenities" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vVX0UEe6iQJjAR0BDCA" label="SafetyIndex" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vVn0UEe6iQJjAR0BDCA" label="EnvironmentalQuality" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vV30UEe6iQJjAR0BDCA" label="DevelopmentIndex" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yS1vWH0UEe6iQJjAR0BDCA" label="GeospatialData" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
