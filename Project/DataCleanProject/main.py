@@ -234,7 +234,7 @@ def DetectAndFixingLocation():
 
     # For cases where latitude and longitude are null, if you have a default value or can get Location somehow, you can set it here
     # For example, you can leave it blank or set it to unknown
-    # df.loc[df['Latitude'].isnull() | df['Longitude'].isnull(), 'Location'] = 'Unknown'  # 或者您的默认值
+    # df.loc[df['Latitude'].isnull() | df['Longitude'].isnull(), 'Location'] = 'Unknown'  # or your default
 
     # Save to new file
     df.to_csv('building_V6.csv', index=False)
@@ -468,7 +468,7 @@ def calculate_weights(df, column_name):
 
 def test_distance():
     # Use a breakpoint in the code line below to debug your script.
-    print(distance('IL', 'HA'))  # 应输出 3
+    print(distance('IL', 'HA'))  # Should output 3
 
 
 # Press the green button in the gutter to run the script.

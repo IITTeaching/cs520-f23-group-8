@@ -4,7 +4,7 @@ import re
 import pymysql.cursors
 
 def export_other():
-    # 数据库连接配置
+    # Database Connection Configuration
     config = {
         'host': 'localhost',
         'user': 'root',
@@ -12,7 +12,7 @@ def export_other():
         'db': 'data_integration'
     }
 
-    # 连接到数据库
+    # Connecting to the database
     connection = pymysql.connect(**config)
 
     # Table names to export
@@ -54,7 +54,7 @@ def export_other():
     connection.close()
 
 def export_building_energy():
-    # 数据库连接配置
+    # Database Connection Configuration
     config = {
         'host': 'localhost',
         'user': 'root',
@@ -62,47 +62,47 @@ def export_building_energy():
         'db': 'data_integration'
     }
 
-    # 连接到数据库
+    # Connecting to the database
     connection = pymysql.connect(**config)
 
-    # 创建cursor以执行查询
+    # Creating a cursor to execute a query
     cursor = connection.cursor()
 
-    # 执行你想导出的表的查询
+    # Execute the query for the table you want to export
     cursor.execute("SELECT * FROM building_energy")
 
-    # 获取查询结果
+    # Getting Query Results
     rows  = cursor.fetchall()
 
-    # 指定将要保存CSV文件的路径
+    # Specify the path where the CSV file will be saved
     csv_file_path = 'building_energy.csv'
 
-    # 打开CSV文件，准备写入
+    # Open the CSV file and prepare to write
     with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:
         csv_writer = csv.writer(csv_file)
-        # 写入标题头（可选）
+        # Write to header (optional)
         field_names = [i[0] for i in cursor.description]
         csv_writer.writerow(field_names)
 
         # Identify index of 'Location' column based on the header
         location_index = field_names.index('Location')
-        # 写入数据行
+        # Write data line
         for row in rows:
             modified_row = list(row)
-            modified_row[-3] = modified_row[-3].replace('"', '')  # 假设Location是最后一列
+            modified_row[-3] = modified_row[-3].replace('"', '')  # Assuming Location is the last column
             # Print original value for debugging
             # if row_as_list[location_index]:
             #    row_as_list[location_index] = row_as_list[location_index].replace('"', '')
             csv_writer.writerow(modified_row)
 
-    # 关闭cursor和连接
+    # Close cursor and connection
     cursor.close()
     connection.close()
 
-    print(f"数据已导出到 {csv_file_path}")
+    print(f"Data has been exported to {csv_file_path}")
 
 def export_building():
-    # 数据库连接配置
+    # Database Connection Configuration
     config = {
         'host': 'localhost',
         'user': 'root',
@@ -110,105 +110,105 @@ def export_building():
         'db': 'data_integration'
     }
 
-    # 连接到数据库
+    # Connecting to the database
     connection = pymysql.connect(**config)
 
-    # 创建cursor以执行查询
+    # Creating a cursor to execute a query
     cursor = connection.cursor()
 
-    # 执行你想导出的表的查询
+    # Execute the query for the table you want to export
     cursor.execute("SELECT * FROM building")
 
-    # 获取查询结果
+    # Getting Query Results
     rows  = cursor.fetchall()
 
-    # 指定将要保存CSV文件的路径
+    # Specify the path where the CSV file will be saved
     csv_file_path = 'building.csv'
 
-    # 打开CSV文件，准备写入
+    # Open the CSV file and prepare to write
     with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:
         csv_writer = csv.writer(csv_file)
-        # 写入标题头（可选）
+        # Write to header (optional)
         csv_writer.writerow([i[0] for i in cursor.description])
 
-        # 写入数据行
+        # Write data line
         for row in rows:
-            # 去除最后一列值中的双引号
+            # Remove double quotes from the last column of values
             modified_row = list(row)
-            modified_row[-1] = modified_row[-1].replace('"', '')  # 替换掉双引号
+            modified_row[-1] = modified_row[-1].replace('"', '')  # Replace the double quotes
             csv_writer.writerow(modified_row)
 
-    # 关闭cursor和连接
+    # Close cursor and connection
     cursor.close()
     connection.close()
 
-    print(f"数据已导出到 {csv_file_path}")
+    print(f"Data has been exported to {csv_file_path}")
 def second_export_building():
-    # 指定你的CSV文件路径
+    # Specify the path to your CSV file
     csv_file_path = 'building.csv'
     temp_file_path = 'building_temp.csv'
 
-    # 打开原始CSV文件和一个临时文件
+    # Open the original CSV file and a temporary file
     with open(csv_file_path, 'r', encoding='utf-8') as infile, \
             open(temp_file_path, 'w', newline='', encoding='utf-8') as outfile:
-        # 读取原始文件内容
+        # Read the contents of the original file
         filedata = infile.read()
 
-        # 移除所有双引号
+        # Remove all double quotes
         filedata = filedata.replace('"', '')
 
-        # 写入修改后的数据到临时文件
+        # Write modified data to a temporary file
         outfile.write(filedata)
 
-    # 替换原始文件
+    # Replacement of the original document
     import os
-    os.remove(csv_file_path)  # 删除原始文件
-    os.rename(temp_file_path, csv_file_path)  # 将临时文件重命名为原始文件名
+    os.remove(csv_file_path)  # Delete the original file
+    os.rename(temp_file_path, csv_file_path)  # Renaming a temporary file to its original filename
 def second_export_building_energy():
-    # 指定你的CSV文件路径
+    # Specify the path to your CSV file
     csv_file_path = 'building_energy.csv'
     temp_file_path = 'building_energy_temp.csv'
 
-    # 打开原始CSV文件和一个临时文件
+    # Open the original CSV file and a temporary file
     with open(csv_file_path, 'r', encoding='utf-8') as infile, \
             open(temp_file_path, 'w', newline='', encoding='utf-8') as outfile:
-        # 读取原始文件内容
+        # Read the contents of the original file
         filedata = infile.read()
 
-        # 移除所有双引号
+        # Remove all double quotes
         filedata = filedata.replace('"', '')
 
-        # 写入修改后的数据到临时文件
+        # Write modified data to a temporary file
         outfile.write(filedata)
 
-    # 替换原始文件
+    # Replacement of the original document
     import os
-    os.remove(csv_file_path)  # 删除原始文件
-    os.rename(temp_file_path, csv_file_path)  # 将临时文件重命名为原始文件名
+    os.remove(csv_file_path)  # Delete the original file
+    os.rename(temp_file_path, csv_file_path)  # Renaming a temporary file to its original filename
 
 def second_export_other():
     import os
-    # CSV文件列表
+    # CSV file list
     tables = ['building_community.csv', 'building_street.csv', 'community_service.csv']
     for table in tables:
-        # 指定CSV文件路径和临时文件路径
+        # Specify CSV file paths and temporary file paths
         csv_file_path = f'{table}'
         temp_file_path = f'temp_{table}'
-        # 确保文件存在
+        # Make sure the file exists
         if not os.path.isfile(csv_file_path):
             print(f"File {csv_file_path} does not exist.")
             continue
 
-        # 读取CSV文件内容，删除双引号，并写入临时文件
+        # Reads the contents of a CSV file, removes the double quotes, and writes to a temporary file
         with open(csv_file_path, 'r', encoding='utf-8') as infile, open(temp_file_path, 'w', newline='',
                                                                         encoding='utf-8') as outfile:
             filedata = infile.read()
-            filedata = filedata.replace('"', '')  # 移除所有双引号
-            outfile.write(filedata)  # 写入临时文件
+            filedata = filedata.replace('"', '')  # Remove all double quotes
+            outfile.write(filedata)  # Write to temporary files
 
-        # 替换原始文件
-        os.remove(csv_file_path)  # 删除原始文件
-        os.rename(temp_file_path, csv_file_path)  # 将临时文件重命名为原始文件名
+        # Replacement of the original document
+        os.remove(csv_file_path)  # Delete the original file
+        os.rename(temp_file_path, csv_file_path)  # Renaming a temporary file to its original filename
 
     print("Removed quotes from all CSV files.")
 
@@ -225,7 +225,7 @@ def random_number(min_value, max_value, precision=0):
     return round(random.uniform(min_value, max_value), precision)
 
 def  insert_community_data():
-    # 数据库连接配置
+    # Database Connection Configuration
     config = {
         'host': 'localhost',
         'user': 'root',
@@ -233,16 +233,16 @@ def  insert_community_data():
         'db': 'data_integration'
     }
 
-    # 连接到数据库
+    # Connecting to the database
     connection = pymysql.connect(**config)
 
     try:
-        # 创建cursor以执行查询，使用DictCursor
+        # Creating a cursor to execute a query, using DictCursor
         with connection.cursor(pymysql.cursors.DictCursor) as cursor:
-            # 执行你想导出的表的查询
+            # Execute the query for the table you want to export
             cursor.execute("SELECT * from building A,building_energy B WHERE A.Building_ID = B.ID ORDER BY A.Building_ID DESC")
 
-            # 获取查询结果
+            # Getting Query Results
             rows = cursor.fetchall()
             for row in rows:
                 insert_statement = """
@@ -254,7 +254,7 @@ def  insert_community_data():
                             %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
                         )
                         """
-                # 用实际值替换占位符（这里只是示例）
+                # Replace placeholders with actual values (this is just an example)
                 data = (
                     row['Building_ID'],
                     row['Community_Number'],
@@ -276,13 +276,13 @@ def  insert_community_data():
                     random_number(0, 100)
                 )
 
-                # 执行INSERT语句
+                # Execute the INSERT statement
                 if row['Community_Number']:
                     cursor.execute(insert_statement, data)
             connection.commit()
                 # print(row['Building_ID'],row['Zip'],row['State'],row['City'],row['Community_Number'],row['Community_Name'])  # Now you can access by column name
     finally:
-        # 关闭数据库连接
+        # Close the database connection
         connection.close()
 
 def random_phone_number():
